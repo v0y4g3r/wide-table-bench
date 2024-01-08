@@ -1,0 +1,1 @@
+# GreptimeDB wide table benchmark
