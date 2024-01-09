@@ -18,7 +18,7 @@ use clap::Parser;
 #[command(author, version, about, long_about = None)]
 pub struct Args {
     /// Database gRPC endpoint
-    #[clap(short, long, default_value="127.0.0.1:4001")]
+    #[clap(short, long, default_value = "127.0.0.1:4001")]
     pub endpoint: String,
 
     /// Database batch size
@@ -34,7 +34,7 @@ pub struct Args {
     pub concurrency: usize,
 
     /// Field column num of table.
-    #[clap(long, default_value_t = 1600)]
+    #[clap(long, default_value_t = 1200)]
     pub column_num: usize,
 
     #[clap(long, default_value = "bench")]
